@@ -1,3 +1,6 @@
+# Java
+export HOME_JAVA=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/
+
 #istio 
 #export PATH="$PATH:/Users/johnsigvaldskauge/istio/istio-1.0.1/bin"
 export PATH="$PATH:/Users/johnsigvaldskauge/istio/istio-1.0.0/bin"
