@@ -1,21 +1,49 @@
+#Terraform
+export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
+
+# operator-sdk
+#source <(operator-sdk completion zsh)
+# SOPS monitoring account
+export SOPS_KMS_ARN="xxxxx"
+
+# Node
+export NVM_DIR="$HOME/.nvm"
+alias loadnvm=". /usr/local/opt/nvm/nvm.sh"
+
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+ 
+
+# Flutter
+#export PATH=/opt/flutter/flutter/bin:$PATH
+
+
 # Java
 export HOME_JAVA=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/
 
+# Google cloud
+#export GOOGLE_CREDENTIALS=~/.gcloud/sumorelevansteamet-project001-7c37d5f70d17.json
+# export GOOGLE_CREDENTIALS=/Users/johnsigvaldskauge/.config/gcloud/application_default_credentials.json
+export GOOGLE_APPLICATION_CREDENTIALS=~/.config/gcloud/application_default_credentials.json
+
 #istio 
 #export PATH="$PATH:/Users/johnsigvaldskauge/istio/istio-1.0.1/bin"
-export PATH="$PATH:/Users/johnsigvaldskauge/istio/istio-1.0.0/bin"
+#export PATH="$PATH:/Users/johnsigvaldskauge/istio/istio-1.0.0/bin"
+#export PATH="$PATH:/Users/johnsigvaldskauge/istio/istio-1.0.3/bin"
 
 # Golang
 export GOPATH=~/GoProjects
 
 # Ansible
-# export ANSIBLE_VAULT_PASSWORD_FILE=~/.vault_pass.txt
+export ANSIBLE_VAULT_PASSWORD_FILE=~/.xxxxx.txt
 
 
 # Python
+export PIPENV_VENV_IN_PROJECT=1
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 source /usr/local/bin/virtualenvwrapper.sh
 export ZSH=/Users/johnsigvaldskauge/.oh-my-zsh
+alias python="python3"
+alias pip="pip3"
 
 # Gcloud
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
@@ -25,30 +53,20 @@ export CONFIG_FILE=~/kubespray/inventory/hosts.ini
 source <(kubectl completion zsh)
 
 # kops
-source /usr/local/etc/bash_completion.d
+#source /usr/local/etc/bash_completion.d
 
 #Groovy
 export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$PATH:/Users/johnsigvaldskauge/Library/Python/3.6/bin:$GOPATH/bin
+export PATH=$PATH:/Users/johnsigvaldskauge/Library/Python/3.7/bin:$GOPATH/bin
 # Path to your oh-my-zsh installation.
 
 
 #Kubernetes
-export KOPS_STATE_STORE=s3://kops-state-john-aws5
-#export KUBECONFIG=~/.kube/config:~/.kube/gce.yaml:~/.kube/aws.yaml#:~/.kube/config
-#export KUBECONFIG=~/.kube/maas.conf:~/.kube/aws.yaml:~/.kube/config:~/.kube/gce.yaml #:~/.kube/config
-#export KUBECONFIG=~/.kube/config
-#export KUBECONFIG=~/.kube/aws.yaml~:/.kube/maas.conf:~/.kube/config:~/.kube/gce.yaml #:~/.kube/config
-export KUBECONFIG=~/.kube/config:~/.kube/gce.yaml:~/.kube/maas.conf:~/.kube/aws.yaml
-#export KUBECONFIG=~/.kube/gce.yaml
-#export KUBECONFIG=~/.kube/aws.yaml:~/.kube/gce.yaml:~/.kube/maas.conf
-#export KUBECONFIG=~/.kube/maas.conf
-
-# Set name of the theme to load. Optionally, if you set this to "random"
-# it'll load a random theme each time that oh-my-zsh is loaded.
+export KOPS_STATE_STORE=s3://xxxxxxxx
+export KUBECONFIG=~/.kube/config
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 ZSH_THEME="robbyrussell"
 
@@ -113,6 +131,10 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
+export LC_ALL=no_NO.UTF-8
+
+export LANG=no_NO.UTF-8
+
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
