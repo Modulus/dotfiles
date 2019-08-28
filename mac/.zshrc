@@ -8,6 +8,7 @@ export SOPS_KMS_ARN="xxxxx"
 
 # Node
 export NVM_DIR="$HOME/.nvm"
+echo "to load node: 'loadnvm'"
 alias loadnvm=". /usr/local/opt/nvm/nvm.sh"
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
@@ -40,7 +41,8 @@ export ANSIBLE_VAULT_PASSWORD_FILE=~/.xxxxx.txt
 # Python
 export PIPENV_VENV_IN_PROJECT=1
 export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-source /usr/local/bin/virtualenvwrapper.sh
+echo "To load python virtualenvwrapper: loadvenv"
+alias loadvenv="source /usr/local/bin/virtualenvwrapper.sh"
 export ZSH=/Users/johnsigvaldskauge/.oh-my-zsh
 alias python="python3"
 alias pip="pip3"
@@ -119,9 +121,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(
-  git
-)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
