@@ -165,3 +165,6 @@ export LANG=no_NO.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+#
+# Rust
+source ~/.cargo/env
