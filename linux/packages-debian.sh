@@ -28,12 +28,12 @@ newgrp libvirt-qemu
 id
 
 # Python install
- apt install python3-pip
+apt install python3-pip
 pip3 install pipenv
 
 # Install zsh
 echo "Installing zsh and oh-my-zsh"
- apt install zsh
+apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # kubernetes
