@@ -13,7 +13,7 @@ export ZSH="/home/modulus/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="robbyrussell"
+ZSH_THEME="spaceship"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -73,8 +73,17 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(
+  git
+  github
+  kubectl
+  ssh-agent
+)
 
+# Spaceship theme settings - needs to be after initialising the theme
+SPACESHIP_PROMPT_DEFAULT_PREFIX=' '
+SPACESHIP_PROMPT_DEFAULT_SUFFIX=' '
+SPACESHIP_KUBECONTEXT_SHOW=false
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
