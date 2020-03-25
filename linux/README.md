@@ -31,3 +31,6 @@ System settings -->
     Colors -> Adapta Nokto
     Application Style -> Widget Style --> Breeze
     Startup and Shutdown -> Login -> Sugar Candy for SDDM or CHili for plasma
+    Workspace Theme -> New Theme -> QuarksSplashDark
+
+Shell profile -> Dark Pastels
