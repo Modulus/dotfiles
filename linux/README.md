@@ -23,3 +23,11 @@ PlugInstall
 
 # Use
 bash install.sh
+
+# Look and feel after install
+icons --> Breeze Dark
+window decorations -> adapta
+System settings -->
+    Colors -> Adapta Nokto
+    Application Style -> Widget Style --> Breeze
+    Startup and Shutdown -> Login -> Sugar Candy for SDDM or CHili for plasma
