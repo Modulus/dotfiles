@@ -82,7 +82,6 @@ sudo snap install skype --classic
 sudo snap install slack --classic
 sudo snap install signal-desktop
 sudo snap install spotify 
-
-
+sudo snap install intellij-idea-community --classic
 
 
