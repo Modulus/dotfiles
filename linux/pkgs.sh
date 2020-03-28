@@ -85,3 +85,5 @@ sudo snap install spotify
 sudo snap install intellij-idea-community --classic
 
 
+# Rust
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh

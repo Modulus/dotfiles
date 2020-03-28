@@ -2,5 +2,6 @@ call plug#begin()
 Plug 'stephpy/vim-yaml'
 Plug 'itchyny/lightline.vim'
 Plug 'martinda/jenkinsfile-vim-syntax'
+Plug 'rust-lang/rust.vim'
 set laststatus=2
 call plug#end()
