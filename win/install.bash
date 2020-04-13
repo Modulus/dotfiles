@@ -25,3 +25,7 @@ terraform
 vagrant
 intellijidea-community
 qbittorrent
+spotify
+etcher
+discord
+docker-desktop
