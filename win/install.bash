@@ -22,4 +22,6 @@ python3
 rust 
 slack 
 terraform 
-vagrant 
+vagrant
+intellijidea-community
+qbittorrent
