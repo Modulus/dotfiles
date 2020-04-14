@@ -83,6 +83,10 @@ sudo snap install slack --classic
 sudo snap install signal-desktop
 sudo snap install spotify 
 
+# Nvm
+echo "Install nvm"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+
 
 
 
