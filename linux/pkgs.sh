@@ -13,6 +13,9 @@ sudo snap install code intellij-idea-community --classic
 
 sudo apt install -y yakuake 
 
+echo "Installing postgresql-client"
+sudo apt install -y postgresql-client
+
 # Installing libvirt for minikube etc
 sudo apt install -y qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils libguestfs-tools genisoimage virtinst libosinfo-bin
 
