@@ -5,3 +5,5 @@ Plug 'martinda/jenkinsfile-vim-syntax'
 Plug 'rust-lang/rust.vim'
 set laststatus=2
 call plug#end()
+
+set number
