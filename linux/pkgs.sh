@@ -13,6 +13,14 @@ sudo snap install code intellij-idea-community --classic
 
 sudo apt install -y yakuake 
 
+echo "Installing bluetooth packages"
+sudo apt install -y pulseaudio pulseaudio-module-bluetooth pavucontrol bluez-firmware
+
+sudo service bluetooth restart
+sudo killall pulseaudio
+sudo apt install blueman
+
+
 echo "Installing postgresql-client"
 sudo apt install -y postgresql-client
 
