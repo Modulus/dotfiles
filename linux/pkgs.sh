@@ -13,6 +13,17 @@ sudo snap install code intellij-idea-community --classic
 
 sudo apt install -y yakuake 
 
+echo "Installing bluetooth packages"
+sudo apt install -y pulseaudio pulseaudio-module-bluetooth pavucontrol bluez-firmware
+
+sudo service bluetooth restart
+sudo killall pulseaudio
+sudo apt install blueman
+
+
+echo "Installing postgresql-client"
+sudo apt install -y postgresql-client
+
 # Installing libvirt for minikube etc
 sudo apt install -y qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils libguestfs-tools genisoimage virtinst libosinfo-bin
 
@@ -84,6 +95,10 @@ sudo snap install signal-desktop
 sudo snap install spotify 
 sudo snap install intellij-idea-community --classic
 sudo snap install discord
+
+# Nvm
+echo "Install nvm"
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 
 # Rust
