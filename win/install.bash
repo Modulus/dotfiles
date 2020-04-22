@@ -29,3 +29,4 @@ spotify
 etcher
 discord
 docker-desktop
+visualstudio-2019-remotetools
