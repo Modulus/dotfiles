@@ -3,6 +3,12 @@
 export PATH=/home/modulus/.local/bin:$PATH
 export PATH=/snap/bin:$PATH
 
+# Pyenv
+export PATH=~/.pyenv/shims:~/.pyenv/bin:$PATH
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+
 # Rust
 export PATH=/home/modulus/.cargo/bin:$PATH
 

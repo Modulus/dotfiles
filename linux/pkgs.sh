@@ -6,7 +6,7 @@
 # newgrp 
 
 echo "Installing base packages"
-sudo apt install -y curl wget python3-pip linux-image-amd64 cups snapd git dnsutils vim
+sudo apt install -y curl wget python3-pip linux-image-amd64 cups snapd git dnsutils vim 
 
 
 sudo snap install code intellij-idea-community --classic
@@ -41,7 +41,17 @@ sudo apt install -y virt-manager
 #id
 
 # Python install
+echo "Installing pyenv prereqs"
+sudo apt install -y make build-essential libssl-dev zlib1g-dev libbz2-dev \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl git zlibc zlib1g-dev
+echo "Installing python and tools for it"
 sudo apt install -y python3-pip
+# Pyenv
+echo "Installing pyenv"
+curl -L https://github.com/pyenv/pyenv-installer/raw/master/bin/pyenv-installer | bash
+
+echo "Run pyenv doctor to check config"
 pip3 install pipenv
 
 # Install zsh
@@ -102,4 +112,7 @@ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 
 # Rust
+echo "Installing rustup"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+
