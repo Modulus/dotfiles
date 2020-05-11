@@ -3,6 +3,10 @@
 export PATH=/home/modulus/.local/bin:$PATH
 export PATH=/snap/bin:$PATH
 
+# kubernetes istio
+#export PATH=$PATH:$HOME/.istioctl/bin
+# Istioctl autocomplete
+#source ~/_istioctl
 # Pyenv
 export PATH=~/.pyenv/shims:~/.pyenv/bin:$PATH
 eval "$(pyenv init -)"
