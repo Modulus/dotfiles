@@ -18,7 +18,7 @@ sudo apt install -y pulseaudio pulseaudio-module-bluetooth pavucontrol bluez-fir
 
 sudo service bluetooth restart
 sudo killall pulseaudio
-sudo apt install blueman
+sudo apt install blueman pulseaudio-module-bluetooth
 
 
 echo "Installing postgresql-client"
