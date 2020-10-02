@@ -20,6 +20,7 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 # Java
 #export HOME_JAVA=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 
 # Google cloud
 #export GOOGLE_CREDENTIALS=~/.gcloud/sumorelevansteamet-project001-7c37d5f70d17.json
@@ -70,16 +71,16 @@ export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$PATH:/Users/johnsigvaldskauge/Library/Python/3.7/bin:$GOPATH/bin
+# export PATH=$PATH:/Users/johnsigvaldskauge/Library/Python/3.7/bin:$GOPATH/bin
 # Path to your oh-my-zsh installation.
 
 
 #Kubernetes
-export KOPS_STATE_STORE=s3://xxxxxxxx
-export KUBECONFIG=~/.kube/config
+#export KOPS_STATE_STORE=s3://xxxxxxxx
+#export KUBECONFIG=~/.kube/config
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
-
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="spaceship"
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -129,7 +130,10 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins (git zsh-syntax-highlighting zsh-autosuggestions git-flow history node npm kubectl)
+#plugins (git zsh-syntax-highlighting zsh-autosuggestions git-flow history node npm kubectl)
+#plugins (git zsh-syntax-highlighting zsh-autosuggestions git-flow kubectl)
+
+
 
 source $ZSH/oh-my-zsh.sh
 
