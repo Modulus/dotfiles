@@ -7,9 +7,9 @@ export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
 export SOPS_KMS_ARN="xxxxx"
 
 # Node
-export NVM_DIR="$HOME/.nvm"
-echo "to load node: 'loadnvm'"
-alias loadnvm=". /usr/local/opt/nvm/nvm.sh"
+#export NVM_DIR="$HOME/.nvm"
+#echo "to load node: 'loadnvm'"
+#alias loadnvm=". /usr/local/opt/nvm/nvm.sh"
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
  
@@ -19,7 +19,7 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 
 # Java
-export HOME_JAVA=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/
+#export HOME_JAVA=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/
 
 # Google cloud
 #export GOOGLE_CREDENTIALS=~/.gcloud/sumorelevansteamet-project001-7c37d5f70d17.json
@@ -35,17 +35,17 @@ export GOOGLE_APPLICATION_CREDENTIALS=~/.config/gcloud/application_default_crede
 export GOPATH=~/GoProjects
 
 # Ansible
-export ANSIBLE_VAULT_PASSWORD_FILE=~/.xxxxx.txt
+export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible_vault_interaktiv.txt
 
 
 # Python
-export PIPENV_VENV_IN_PROJECT=1
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-echo "To load python virtualenvwrapper: loadvenv"
-alias loadvenv="source /usr/local/bin/virtualenvwrapper.sh"
+#export PIPENV_VENV_IN_PROJECT=1
+#export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+#echo "To load python virtualenvwrapper: loadvenv"
+#alias loadvenv="source /usr/local/bin/virtualenvwrapper.sh"
 export ZSH=/Users/johnsigvaldskauge/.oh-my-zsh
-alias python="python3"
-alias pip="pip3"
+#alias python="python3"
+#alias pip="pip3"
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
