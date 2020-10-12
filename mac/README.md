@@ -12,3 +12,4 @@ bash brew.sh
 bash deploy_csh.sh
 bash instal-shell.sh
 source ~/.zshrc
+bash install-pkgs.sh
