@@ -7,9 +7,9 @@ export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
 export SOPS_KMS_ARN="xxxxx"
 
 # Node
-export NVM_DIR="$HOME/.nvm"
-echo "to load node: 'loadnvm'"
-alias loadnvm=". /usr/local/opt/nvm/nvm.sh"
+#export NVM_DIR="$HOME/.nvm"
+#echo "to load node: 'loadnvm'"
+#alias loadnvm=". /usr/local/opt/nvm/nvm.sh"
 
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
  
@@ -19,7 +19,8 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 
 
 # Java
-export HOME_JAVA=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/
+#export HOME_JAVA=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/
+export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
 
 # Google cloud
 #export GOOGLE_CREDENTIALS=~/.gcloud/sumorelevansteamet-project001-7c37d5f70d17.json
@@ -35,17 +36,17 @@ export GOOGLE_APPLICATION_CREDENTIALS=~/.config/gcloud/application_default_crede
 export GOPATH=~/GoProjects
 
 # Ansible
-export ANSIBLE_VAULT_PASSWORD_FILE=~/.xxxxx.txt
+export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible_vault_interaktiv.txt
 
 
 # Python
-export PIPENV_VENV_IN_PROJECT=1
-export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-echo "To load python virtualenvwrapper: loadvenv"
-alias loadvenv="source /usr/local/bin/virtualenvwrapper.sh"
+#export PIPENV_VENV_IN_PROJECT=1
+#export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
+#echo "To load python virtualenvwrapper: loadvenv"
+#alias loadvenv="source /usr/local/bin/virtualenvwrapper.sh"
 export ZSH=/Users/johnsigvaldskauge/.oh-my-zsh
-alias python="python3"
-alias pip="pip3"
+#alias python="python3"
+#alias pip="pip3"
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
@@ -70,16 +71,16 @@ export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
-export PATH=$PATH:/Users/johnsigvaldskauge/Library/Python/3.7/bin:$GOPATH/bin
+# export PATH=$PATH:/Users/johnsigvaldskauge/Library/Python/3.7/bin:$GOPATH/bin
 # Path to your oh-my-zsh installation.
 
 
 #Kubernetes
-export KOPS_STATE_STORE=s3://xxxxxxxx
-export KUBECONFIG=~/.kube/config
+#export KOPS_STATE_STORE=s3://xxxxxxxx
+#export KUBECONFIG=~/.kube/config
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="robbyrussell"
-
+#ZSH_THEME="robbyrussell"
+ZSH_THEME="spaceship"
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -129,7 +130,10 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins (git zsh-syntax-highlighting zsh-autosuggestions git-flow history node npm kubectl)
+#plugins (git zsh-syntax-highlighting zsh-autosuggestions git-flow history node npm kubectl)
+#plugins (git zsh-syntax-highlighting zsh-autosuggestions git-flow kubectl)
+
+
 
 source $ZSH/oh-my-zsh.sh
 
