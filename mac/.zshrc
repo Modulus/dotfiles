@@ -1,5 +1,5 @@
 #Terraform
-export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
+export PATH="/usr/local/Cellar/tfenv/2.2.2/bin/terraform:$PATH"
 
 # operator-sdk
 #source <(operator-sdk completion zsh)
@@ -51,10 +51,15 @@ export ZSH=/Users/johnsigvaldskauge/.oh-my-zsh
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
-fi
+eval "$(pyenv init --path)"
 
+# Load pyenv into the shell by adding
+# the following to ~/.zshrc:
+
+eval "$(pyenv init -)"
+
+# Make sure to restart your entire logon session
+# for changes to profile files to take effect.
 
 # Gcloud
 source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
