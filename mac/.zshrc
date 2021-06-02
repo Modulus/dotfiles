@@ -1,5 +1,5 @@
 #Terraform
-export PATH="/usr/local/Cellar/tfenv/2.2.2/bin/terraform:$PATH"
+export PATH="/usr/local/Cellar/tfenv/2.2.2/bin:$PATH"
 
 # operator-sdk
 #source <(operator-sdk completion zsh)
