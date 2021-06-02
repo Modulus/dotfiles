@@ -9,7 +9,8 @@ eksctl	ipcalc node findutils tree go kind lua sops rustup-init java11 pyenv  lib
 echo "Installing brew cask packages"
 brew cask install  discord firefox  intellij-idea-ce spectacle  vlc \
 docker flux google-cloud-sdk iterm2 signal spotify  \
-dropbox google-backup-and-sync google-hangouts jetbrains-toolbox postman slack vagrant visual-studio-code google-cloud-sdk firefox brave-browser  visual-studio-code      
+dropbox google-backup-and-sync google-hangouts jetbrains-toolbox postman slack vagrant visual-studio-code google-cloud-sdk firefox brave-browser  visual-studio-code  \
+tfenv
 
 
 # virtualbox virtualbox-extension-pack
