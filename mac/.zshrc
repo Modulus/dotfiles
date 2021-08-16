@@ -1,5 +1,9 @@
+# Starship shell
+eval "$(starship init zsh)"
+
+
 #Terraform
-export PATH="/usr/local/Cellar/tfenv/2.2.2/bin:$PATH"
+#export PATH="/usr/local/Cellar/tfenv/2.2.2/bin:$PATH"
 
 # operator-sdk
 #source <(operator-sdk completion zsh)
@@ -62,17 +66,17 @@ eval "$(pyenv init -)"
 # for changes to profile files to take effect.
 
 # Gcloud
-source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
-source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
-export CLOUDSDK_CONTAINER_USE_V1_API_CLIENT=false
-export CONFIG_FILE=~/kubespray/inventory/hosts.ini
+# source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+# source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
+# export CLOUDSDK_CONTAINER_USE_V1_API_CLIENT=false
+# export CONFIG_FILE=~/kubespray/inventory/hosts.ini
 source <(kubectl completion zsh)
 
 # kops
 #source /usr/local/etc/bash_completion.d
 
 #Groovy
-export GROOVY_HOME=/usr/local/opt/groovy/libexec
+# export GROOVY_HOME=/usr/local/opt/groovy/libexec
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
@@ -85,7 +89,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 #export KUBECONFIG=~/.kube/config
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 #ZSH_THEME="robbyrussell"
-ZSH_THEME="spaceship"
+# ZSH_THEME="spaceship"
 # Set list of themes to load
 # Setting this variable when ZSH_THEME=random
 # cause zsh load theme from this variable instead of
@@ -177,3 +181,5 @@ export LANG=no_NO.UTF-8
 #
 # Rust
 source ~/.cargo/env
+
+

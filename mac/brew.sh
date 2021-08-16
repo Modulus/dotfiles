@@ -8,9 +8,9 @@ tfenv
 
 
 echo "Installing brew cask packages"
-brew cask install  discord firefox  intellij-idea-ce spectacle  vlc \
-docker flux google-cloud-sdk iterm2 signal spotify  \
-dropbox google-backup-and-sync google-hangouts jetbrains-toolbox postman slack vagrant visual-studio-code google-cloud-sdk firefox brave-browser  visual-studio-code  \
+brew install  discord firefox  intellij-idea-ce spectacle  vlc \
+docker flux iterm2 signal spotify  \
+dropbox google-backup-and-sync jetbrains-toolbox postman slack visual-studio-code  firefox  \
 
 
 # virtualbox virtualbox-extension-pack
