@@ -48,7 +48,7 @@ export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible_vault_interaktiv.txt
 #export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
 #echo "To load python virtualenvwrapper: loadvenv"
 #alias loadvenv="source /usr/local/bin/virtualenvwrapper.sh"
-export ZSH=/Users/johnsigvaldskauge/.oh-my-zsh
+#export ZSH=/Users/johnsigvaldskauge/.oh-my-zsh
 #alias python="python3"
 #alias pip="pip3"
 
@@ -70,7 +70,7 @@ eval "$(pyenv init -)"
 # source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
 # export CLOUDSDK_CONTAINER_USE_V1_API_CLIENT=false
 # export CONFIG_FILE=~/kubespray/inventory/hosts.ini
-source <(kubectl completion zsh)
+#source <(kubectl completion zsh)
 
 # kops
 #source /usr/local/etc/bash_completion.d
@@ -144,7 +144,7 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
 
 # User configuration
 

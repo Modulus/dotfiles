@@ -11,6 +11,7 @@ echo "Installing brew cask packages"
 brew install  discord firefox  intellij-idea-ce spectacle  vlc \
 docker flux iterm2 signal spotify  \
 dropbox google-backup-and-sync jetbrains-toolbox postman slack visual-studio-code  firefox  \
+install azure-cli
 
 
 # virtualbox virtualbox-extension-pack
