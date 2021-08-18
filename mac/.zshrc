@@ -85,6 +85,10 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 
 #Kubernetes
+autoload -Uz compinit
+compinit
+source <(kubectl completion zsh)
+
 #export KOPS_STATE_STORE=s3://xxxxxxxx
 #export KUBECONFIG=~/.kube/config
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
