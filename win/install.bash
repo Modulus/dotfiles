@@ -1,6 +1,5 @@
 choco install 
-aws-iam-authenticator 0.5.0
-brave 1.5.122
+aws-iam-authenticator 
 Cmder
 cpu-z 
 elm-platform 
@@ -10,14 +9,12 @@ golang
 gpu-z 
 hwmonitor 
 hyper 
-jenkins-x 
 kubernetes-cli 
 kubernetes-helm 
 minikube
 nodejs-lts 
 openjdk 
 pgadmin4 
-python 
 python3 
 rust 
 slack 
@@ -30,3 +27,19 @@ etcher
 discord
 docker-desktop
 visualstudio-2019-remotetools
+postman
+realvnc
+rufus
+kind
+kdenlive
+krita
+mingw
+multipass
+notion
+vlc
+vscode
+windirstat
+hwmonitor
+gpu-z
+cpu-z
+crystaldiskinfo
