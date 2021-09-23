@@ -4,7 +4,7 @@ brew install kubernetes-cli istioctl helm	openssh	\
 minikube rbenv	sqlite	utf8proc autoconf gist moreutils p7zip readline	ssh-copy-id aws-iam-authenticator git helmfile vim \
 telnet watch coreutils highlight perl ruby gnu-getopt	tldr wget \
 eksctl	ipcalc node findutils tree go kind lua sops rustup-init java11 pyenv  libpq docker-compose jq haskell-stack \
-tfenv
+tfenv deno
 
 
 echo "Installing brew cask packages"

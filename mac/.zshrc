@@ -90,6 +90,7 @@ compinit
 source <(kubectl completion zsh)
 alias k=kubectl
 alias kns='kubectl config set-context --current --namespace'
+alias ktx='kubectl config use-context'
 #export KOPS_STATE_STORE=s3://xxxxxxxx
 #export KUBECONFIG=~/.kube/config
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
