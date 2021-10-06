@@ -65,8 +65,8 @@ sudo snap install kubectl --classic
 
 #!/bin/bash
 echo "Installing minikube"
-sudo curl -Lo  /tmp/minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \
-  && sudo chmod +x /tmp/minikube && sudo install /tmp/minikube /usr/local/bin/
+#sudo curl -Lo  /tmp/minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \
+#  && sudo chmod +x /tmp/minikube && sudo install /tmp/minikube /usr/local/bin/
 
 
 # Docker
@@ -80,23 +80,23 @@ sudo apt-get install -y \
     software-properties-common
 
 
-sudo curl -fsSL https://download.docker.com/linux/debian/gpg |  sudo apt-key add -
+#sudo curl -fsSL https://download.docker.com/linux/debian/gpg |  sudo apt-key add -
 
 
-sudo apt-key fingerprint 0EBFCD88
-sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/debian \
-   $(lsb_release -cs) \
-   stable"
-sudo apt update
-sudo apt install -y docker-ce docker-ce-cli containerd.io
+#sudo apt-key fingerprint 0EBFCD88
+#sudo add-apt-repository \
+#   "deb [arch=amd64] https://download.docker.com/linux/debian \
+#   $(lsb_release -cs) \
+#   stable"
+#sudo apt update
+#sudo apt install -y docker-ce docker-ce-cli containerd.io
 
-sudo adduser modulus docker
+#sudo adduser modulus docker
 # newgrp docker
 
 # Nvidia
 echo "Installing nvidia-detect"
-sudo apt -y install nvidia-detect
+#sudo apt -y install nvidia-detect
 
 # misc
 sudo snap install skype --classic
@@ -107,8 +107,8 @@ sudo snap install intellij-idea-community --classic
 sudo snap install discord
 
 # Nvm
-echo "Install nvm"
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
+#echo "Install nvm"
+#curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
 
 
 # Rust
