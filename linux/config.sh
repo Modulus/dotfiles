@@ -11,9 +11,9 @@ fi
 
 
 cp config/zshrc ~/.zshrc
+cp config/zprofile ~/.zprofile
 
-
-cp config/vimrc ~/.vimrc
+#cp config/vimrc ~/.vimrc
 
 echo "run 'source ~/.zshrc'"
 echo "run vim and :PlugInstall"
