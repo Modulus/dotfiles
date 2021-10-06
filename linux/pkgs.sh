@@ -6,19 +6,19 @@
 # newgrp 
 
 echo "Installing base packages"
-sudo apt install -y curl wget python3-pip linux-image-amd64 cups snapd git dnsutils vim plasma-applet-redshift-control firmware-linux-nonfree
+sudo apt install -y curl wget python3-pip linux-image-amd64 cups snapd git dnsutils vim  firmware-linux-nonfree
 
 
 sudo snap install code intellij-idea-community --classic
 
 sudo apt install -y yakuake 
 
-echo "Installing bluetooth packages"
-sudo apt install -y pulseaudio pulseaudio-module-bluetooth pavucontrol bluez-firmware
+#echo "Installing bluetooth packages"
+#sudo apt install -y pulseaudio pulseaudio-module-bluetooth pavucontrol bluez-firmware
 
-sudo service bluetooth restart
-sudo killall pulseaudio
-sudo apt install blueman pulseaudio-module-bluetooth
+#sudo service bluetooth restart
+#sudo killall pulseaudio
+#sudo apt install blueman pulseaudio-module-bluetooth
 
 
 echo "Installing postgresql-client"
