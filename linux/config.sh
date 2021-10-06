@@ -12,7 +12,7 @@ fi
 
 cp config/zshrc ~/.zshrc
 cp config/zprofile ~/.zprofile
-
+cp config/gitconfig ~/.gitconfig
 #cp config/vimrc ~/.vimrc
 
 echo "run 'source ~/.zshrc'"
