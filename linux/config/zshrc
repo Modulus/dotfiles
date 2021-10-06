@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/home/modulus/.local/bin:$PATH
 export PATH=/snap/bin:$PATH
-
+alias ls='ls --color=auto'
 
 autoload -Uz compinit
 compinit
