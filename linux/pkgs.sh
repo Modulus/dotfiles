@@ -115,4 +115,7 @@ sudo snap install discord
 echo "Installing rustup"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+# Haskell
+echo "Installing haskell stack"
+curl -sSL https://get.haskellstack.org/ | sh
 
