@@ -1,11 +1,9 @@
 choco install 
 aws-iam-authenticator 
 Cmder
-cpu-z 
 git
 glasswire
 golang 
-gpu-z 
 hwmonitor 
 hyper 
 kubernetes-cli 
