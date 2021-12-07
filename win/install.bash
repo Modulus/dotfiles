@@ -2,7 +2,6 @@ choco install
 aws-iam-authenticator 
 Cmder
 cpu-z 
-elm-platform 
 git
 glasswire
 golang 
