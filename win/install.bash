@@ -13,7 +13,6 @@ nodejs-lts
 openjdk 
 pgadmin4 
 python3 
-rust 
 slack 
 terraform 
 vagrant
