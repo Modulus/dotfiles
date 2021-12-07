@@ -40,3 +40,4 @@ gpu-z
 cpu-z
 crystaldiskinfo
 azure-cli
+
