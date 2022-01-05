@@ -15,3 +15,6 @@ bash instal-shell.sh
 bash deploy_csh.sh
 source ~/.zshrc
 bash install-pkgs.sh
+
+# Set merge tool
+git config --global merge.tool meld
