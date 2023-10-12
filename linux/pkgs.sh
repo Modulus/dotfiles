@@ -63,9 +63,8 @@ curl https://pyenv.run | bash
 #sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # kubernetes
-#echo "Installing kubectl"
-#sudo snap install kubectl --classic
-
+echo "Installing kubectl"
+sudo apt install -y kubernetes-client
 #!/bin/bash
 #echo "Installing minikube"
 #sudo curl -Lo  /tmp/minikube https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64 \
