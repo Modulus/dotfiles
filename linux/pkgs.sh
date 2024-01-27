@@ -121,3 +121,8 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 echo "Installing haskell stack"
 #curl -sSL https://get.haskellstack.org/ | sh
 curl --proto '=https' --tlsv1.2 -sSf https://get-ghcup.haskell.org | sh
+
+
+# Install distrobox
+sudo apt install uidmap
+sudo apt install -y distrobox
