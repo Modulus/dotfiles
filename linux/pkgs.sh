@@ -117,6 +117,10 @@ sudo apt-get install -y \
 echo "Installing rustup"
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
+echo "Installing wasm32 support"
+rustup target add wasm32-unknown-unknown
+
+
 # Haskell
 echo "Installing haskell stack"
 #curl -sSL https://get.haskellstack.org/ | sh
