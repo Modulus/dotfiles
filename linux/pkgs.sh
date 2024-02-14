@@ -132,4 +132,4 @@ sudo apt install uidmap
 sudo apt install -y distrobox
 
 # Prereq for pyenv
-sudo apt-get install build-essential zlib1g-dev libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev liblzma-dev
+sudo apt-get install build-essential zlib1g-dev libffi-dev libssl-dev libbz2-dev libreadline-dev libsqlite3-dev liblzma-dev python3-setuptools-whl
