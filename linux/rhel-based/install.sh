@@ -28,6 +28,8 @@ sudo dnf -y kubernetes-client
 sudo dnf install rustup
 rustup-init
 
+sudo dnf install krita
+
 # Put this in the shell profile file
 source "$HOME/.cargo/env"
 
