@@ -141,4 +141,5 @@ export LANG=no_NO.UTF-8
 # Rust
 source ~/.cargo/env
 
-
+# Enable color for files/folders etc
+export CLICOLOR=1
