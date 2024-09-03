@@ -1,66 +1,19 @@
-# Starship shell
+
+# Starship stuff
 eval "$(starship init zsh)"
 
-
-#Terraform
-#export PATH="/usr/local/Cellar/tfenv/2.2.2/bin:$PATH"
-
-# operator-sdk
-#source <(operator-sdk completion zsh)
-# SOPS monitoring account
-export SOPS_KMS_ARN="xxxxx"
-
-# Node
-#export NVM_DIR="$HOME/.nvm"
-#echo "to load node: 'loadnvm'"
-#alias loadnvm=". /usr/local/opt/nvm/nvm.sh"
-
-export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
- 
-
-# Flutter
-#export PATH=/opt/flutter/flutter/bin:$PATH
-
-
-# Java
-#export HOME_JAVA=/Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/
-export PATH="/usr/local/opt/openjdk@11/bin:$PATH"
-
-# Google cloud
-#export GOOGLE_CREDENTIALS=~/.gcloud/sumorelevansteamet-project001-7c37d5f70d17.json
-# export GOOGLE_CREDENTIALS=/Users/johnsigvaldskauge/.config/gcloud/application_default_credentials.json
-export GOOGLE_APPLICATION_CREDENTIALS=~/.config/gcloud/application_default_credentials.json
-
-#istio 
-#export PATH="$PATH:/Users/johnsigvaldskauge/istio/istio-1.0.1/bin"
-#export PATH="$PATH:/Users/johnsigvaldskauge/istio/istio-1.0.0/bin"
-#export PATH="$PATH:/Users/johnsigvaldskauge/istio/istio-1.0.3/bin"
+# Python stuff
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
 
 # Golang
-export GOPATH=~/GoProjects
+export GOPATH=~/Projects
 
 # Ansible
-export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible_vault_interaktiv.txt
+export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible_vault.txt
 
 
-# Python
-#export PIPENV_VENV_IN_PROJECT=1
-#export VIRTUALENVWRAPPER_PYTHON=/usr/local/bin/python3
-#echo "To load python virtualenvwrapper: loadvenv"
-#alias loadvenv="source /usr/local/bin/virtualenvwrapper.sh"
-#export ZSH=/Users/johnsigvaldskauge/.oh-my-zsh
-#alias python="python3"
-#alias pip="pip3"
-
-# pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-
-# Load pyenv into the shell by adding
-# the following to ~/.zshrc:
-
-eval "$(pyenv init -)"
 
 # Make sure to restart your entire logon session
 # for changes to profile files to take effect.
