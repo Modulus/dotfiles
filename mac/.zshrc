@@ -13,7 +13,13 @@ export GOPATH=~/Projects
 # Ansible
 export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible_vault.txt
 
+#openshift
+if [ /opt/homebrew/bin/oc ]; then
+  source <(oc completion zsh)
+  compdef _oc oc
+fi
 
+alias k=oc
 
 # Make sure to restart your entire logon session
 # for changes to profile files to take effect.
