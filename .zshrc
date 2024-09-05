@@ -1,10 +1,8 @@
-#Terraform
-#export PATH="/usr/local/opt/terraform@0.11/bin:$PATH"
+autoload -Uz compinit
+compinit
 
-# operator-sdk
-#source <(operator-sdk completion zsh)
-# SOPS monitoring account
-export SOPS_KMS_ARN="xxxxx"
+
+
 
 # Node
 #export NVM_DIR="$HOME/.nvm"
