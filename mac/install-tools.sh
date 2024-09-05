@@ -40,6 +40,8 @@ tool_list=(
   tree
   haskell-stack
   gh
+  openshift-cli
+  kubectx
 )
 
 #brew tap homebrew/cask-fonts
