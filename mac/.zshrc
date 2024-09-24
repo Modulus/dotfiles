@@ -44,8 +44,9 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 
 #kubernetes
-autoload -Uz compinit
-compinit
+
+# THis is slow, moved to .zprofile/.zlogin
+
 source <(kubectl completion zsh)
 alias k=kubectl
 alias kns='kubectl config set-context --current --namespace'

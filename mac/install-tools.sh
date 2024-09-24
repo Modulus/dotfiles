@@ -44,6 +44,7 @@ tool_list=(
   kubectx
   k9s
   obsidian
+  git-lfs
 )
 
 #brew tap homebrew/cask-fonts
