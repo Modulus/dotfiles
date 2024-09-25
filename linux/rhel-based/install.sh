@@ -101,3 +101,7 @@ sudo dnf install steam -y
 
 # HOmebrew on linux
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+
+# Machine learning stuff
+sudo dnf install xz xz-devel xz-libs
