@@ -13,6 +13,7 @@ tool_list=(
   google-chrome
   slack
   pyenv
+  pyenv-virtualenv
   node
   visual-studio-code
   azure-cli
