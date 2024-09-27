@@ -2,6 +2,7 @@ version: '3.8'
 
 services:
   fedora:
+    container_name: fedora
     image: fedora:latest
     volumes:
       - .:/mnt

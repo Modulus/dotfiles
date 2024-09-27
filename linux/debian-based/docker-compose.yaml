@@ -1,7 +1,8 @@
 version: '3.8'
 
 services:
-  fedora:
+  debian:
+    container_name: stow
     image: debian:latest
     volumes:
       - .:/mnt
