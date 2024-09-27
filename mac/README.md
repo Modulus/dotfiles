@@ -10,20 +10,24 @@ brew tap homebrew/cask-fonts
 # Use stow
 brew install stow
 
+# Information about stow
+Since this folder structure deviates from the regular stow setup, we need to specify a target directory such that the files arent linked to ~/mac/.* but your home folder.
+This is done with the -t flag for the stow command.
 
+## To setup dotfile links run
 
-# Steps
-bash install-brew.sh
-bash brew.sh
-bash instal-shell.sh
-bash deploy_csh.sh
-source ~/.zshrc
-bash install-pkgs.sh
-
-# Set merge tool
-git config --global merge.tool meld
+```
+stow -t ~ . --adopt
+```
 
 
 # Install brew bundle
-brew bundle --file Brewfile
+brew bundle --file ~/.brew/Brewfile
+
+
+## On clean machine run steps
+
+NB! You only need to run these on a new/clean machine
+bash ~/.scripts/init.sh
+
 
