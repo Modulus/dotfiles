@@ -15,3 +15,7 @@ System settings -->
     Workspace Theme -> New Theme -> QuarksSplashDark
 
 Shell profile -> Dark Pastels
+
+
+# After installing stow do
+stow -t ~ . --adopt
