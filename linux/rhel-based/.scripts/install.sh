@@ -111,3 +111,7 @@ sudo dnf install steam -y
 
 # Machine learning stuff
 sudo dnf install xz xz-devel xz-libs
+
+
+# VIm stash
+sudo dnf install -y python3-filetype
