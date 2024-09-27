@@ -2,4 +2,4 @@
 sudo dnf install stow 
 
 
-stow -t ~ . --adpot
+stow -t ~ . --adopt

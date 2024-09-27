@@ -3,9 +3,15 @@ localectl set-keymap no
 localectl set-x11-keymap no
 
 # Install csh
-sudo dnf install tcsh 
-which csh
+#sudo dnf install tcsh 
+#which csh
 #chsh to output over
+
+sudo dnf install -y zsh
+chsh -s $(which zsh)
+# dotfiles support
+sudo dnf intall -y stow
+
 
 sudo dnf remove docker \
                   docker-client \
