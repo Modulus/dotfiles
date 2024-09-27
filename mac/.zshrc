@@ -1,155 +1,47 @@
 
+# Profile slow startup
+#zmodload zsh/zprof
+
+
 # Starship stuff
 eval "$(starship init zsh)"
 
-# Python stuff
+# Pyenv stuff
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+# LS color
+export CLICOLOR=1
 
-# Golang
-export GOPATH=~/Projects
 
-# Ansible
-export ANSIBLE_VAULT_PASSWORD_FILE=~/.ansible_vault.txt
-
-#openshift
 if [ /opt/homebrew/bin/oc ]; then
   source <(oc completion zsh)
   compdef _oc oc
+  alias k=oc
+
 fi
 
-alias k=oc
 
-# Make sure to restart your entire logon session
-# for changes to profile files to take effect.
-
-# Gcloud
-# source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
-# source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
-# export CLOUDSDK_CONTAINER_USE_V1_API_CLIENT=false
-# export CONFIG_FILE=~/kubespray/inventory/hosts.ini
-#source <(kubectl completion zsh)
-
-# kops
-#source /usr/local/etc/bash_completion.d
-
-#Groovy
-# export GROOVY_HOME=/usr/local/opt/groovy/libexec
-
-# If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$PATH
-# export PATH=$PATH:/Users/johnsigvaldskauge/Library/Python/3.7/bin:$GOPATH/bin
-# Path to your oh-my-zsh installation.
-
-
-#kubernetes
-
-# THis is slow, moved to .zprofile/.zlogin
-
-source <(kubectl completion zsh)
-alias k=kubectl
-alias kns='kubectl config set-context --current --namespace'
-alias ktx='kubectl config use-context'
-
+# Kubernetes stuff
 export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
-
-#export KOPS_STATE_STORE=s3://xxxxxxxx
-#export KUBECONFIG=~/.kube/config
-# See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="robbyrussell"
-# ZSH_THEME="spaceship"
-# Set list of themes to load
-# Setting this variable when ZSH_THEME=random
-# cause zsh load theme from this variable instead of
-# looking in ~/.oh-my-zsh/themes/
-# An empty array have no effect
-# ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
-
-# Uncomment the following line to use case-sensitive completion.
-# CASE_SENSITIVE="true"
-
-# Uncomment the following line to use hyphen-insensitive completion. Case
-# sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
-# Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment the following line to disable colors in ls.
-# DISABLE_LS_COLORS="true"
-
-# Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
-
-# Uncomment the following line to display red dots whilst waiting for completion.
-# COMPLETION_WAITING_DOTS="true"
-
-# Uncomment the following line if you want to disable marking untracked files
-# under VCS as dirty. This makes repository status check for large repositories
-# much, much faster.
-# DISABLE_UNTRACKED_FILES_DIRTY="true"
-
-# Uncomment the following line if you want to change the command execution time
-# stamp shown in the history command output.
-# The optional three formats: "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
-# HIST_STAMPS="mm/dd/yyyy"
-
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-# Add wisely, as too many plugins slow down shell startup.
-#plugins (git zsh-syntax-highlighting zsh-autosuggestions git-flow history node npm kubectl)
-#plugins (git zsh-syntax-highlighting zsh-autosuggestions git-flow kubectl)
+source <(helm completion zsh)
 
 
 
-#source $ZSH/oh-my-zsh.sh
+# Java stuff
+#export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
+#export CPPFLAGS="-I/opt/homebrew/opt/openjdk/include"
 
-# User configuration
-
-# export MANPATH="/usr/local/man:$MANPATH"
-
-# You may need to manually set your language environment
-# export LANG=en_US.UTF-8
-export LC_ALL=no_NO.UTF-8
-
-export LANG=no_NO.UTF-8
+# Debub slow zshrc
+#zprof
 
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+# The following lines were added by compinstall
+# zstyle :compinstall filename '/Users/john.sigvald.skauge/.zshrc'
 
-# Compilation flags
-# export ARCHFLAGS="-arch x86_64"
+# End of lines added by compinstall
+alias bump=helm-chart-version-bumper
 
-# ssh
-# export SSH_KEY_PATH="~/.ssh/rsa_id"
-
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-#
-# Rust
-source ~/.cargo/env
-
-# Enable color for files/folders etc
-export CLICOLOR=1
+# Initalize secrets
+source  ~/.env
