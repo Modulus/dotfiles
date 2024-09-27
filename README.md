@@ -5,3 +5,7 @@ Source: https://git-scm.com/download/win
 
 # Vs code for git
 git config --global core.editor "code --wait --new-window"
+
+
+# Brew
+brew bundle dump --describe

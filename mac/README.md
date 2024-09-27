@@ -18,3 +18,8 @@ bash install-pkgs.sh
 
 # Set merge tool
 git config --global merge.tool meld
+
+
+# Install brew bundle
+brew bundle --file Brewfile
+
