@@ -7,6 +7,10 @@ johnsigvaldskauge@BGOMAC-JOSKA131 mac % /usr/local/bin/brew update --force
 
 brew tap homebrew/cask-fonts 
 
+# Use stow
+brew install stow
+
+
 
 # Steps
 bash install-brew.sh
