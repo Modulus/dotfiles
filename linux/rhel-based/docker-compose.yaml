@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  fedora:
+    image: fedora:latest
+    volumes:
+      - .:/mnt
+    working_dir: /mnt
+    tty: true

@@ -19,16 +19,16 @@ sudo dnf remove docker \
                   docker-engine
 sudo dnf -y install dnf-plugins-core
 sudo dnf config-manager --add-repo https://download.docker.com/linux/fedora/docker-ce.repo
-sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo dnf install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo systemctl enable docker
 sudo systemctl start docker
 
 sudo usermod -aG docker $USER
 sudo dnf -y kubernetes-client
-sudo dnf install rustup
+sudo dnf install -y rustup
 rustup-init
 
-sudo dnf install krita
+sudo dnf install -y krita
 
 # Put this in the shell profile file
 source "$HOME/.cargo/env"
@@ -40,7 +40,7 @@ curl https://pyenv.run | bash
 # Put this in the shell profile
 sudo yum -y install git gcc zlib-devel bzip2-devel readline-devel sqlite-devel openssl-devel
 #sudo dnf install -y
-sudo dnf install libffi-devel
+sudo dnf install -y libffi-devel
 
 eval "$(pyenv virtualenv-init -)"
 sudo dnf install python3-tkinter
@@ -62,22 +62,20 @@ sudo dnf -y install kdenlive krita gimp
 # sudo dnf group install --with-optional virtualization
 sudo systemctl start libvirtd
 sudo systemctl enable libvirtd
-sudo dnf install virt-manager
+sudo dnf install -y virt-manager
 
 
 
 
 # Anti virus
-sudo dnf install clamav
+sudo dnf install -y clamav
 
 # Raspberry pi stash
-sudo dnf install rpi-imager
+sudo dnf install -y rpi-imager
+
 
 # Gaming
-sudo dnf install discor
-
-# Gaming
-sudo dnf install discord
+sudo dnf install -y discord
 
 
 # Terraform 
@@ -90,7 +88,7 @@ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
 sudo dnf install -y https://packages.microsoft.com/config/rhel/9.0/packages-microsoft-prod.rpm
 
-sudo dnf install azure-cli
+sudo dnf install -y azure-cli
 
 # Steam
 # https://docs.fedoraproject.org/en-US/gaming/proton/
@@ -104,4 +102,4 @@ sudo dnf install steam -y
 
 
 # Machine learning stuff
-sudo dnf install xz xz-devel xz-libs
+sudo dnf install -y xz xz-devel xz-libs
