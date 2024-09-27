@@ -10,7 +10,7 @@ eval "$(pyenv virtualenv-init -)"
 
 
 # Set kubeconfig and k8s stuff
-export KUBECONFIG="$HOME.kube/microk8s:$HOME.kube/config"
+export KUBECONFIG="$HOME/.kube/microk8s:$HOME/.kube/config"
 
 export PATH="$PATH:/var/lib/snapd/snap/bin"
 
