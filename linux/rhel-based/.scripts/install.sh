@@ -74,16 +74,13 @@ sudo dnf install virt-manager
 
 
 # Anti virus
-sudo dnf install clamav
+sudo dnf install -y clamav
 
 # Raspberry pi stash
-sudo dnf install rpi-imager
+sudo dnf install -y rpi-imager
 
 # Gaming
-sudo dnf install discor
-
-# Gaming
-sudo dnf install discord
+sudo dnf install -y discord
 
 
 # Terraform 
@@ -96,16 +93,16 @@ sudo rpm --import https://packages.microsoft.com/keys/microsoft.asc
 
 sudo dnf install -y https://packages.microsoft.com/config/rhel/9.0/packages-microsoft-prod.rpm
 
-sudo dnf install azure-cli
+sudo dnf install -y azure-cli
 
 # Steam
 # https://docs.fedoraproject.org/en-US/gaming/proton/
-sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
+#sudo dnf install https://mirrors.rpmfusion.org/free/fedora/rpmfusion-free-release-$(rpm -E %fedora).noarch.rpm https://mirrors.rpmfusion.org/nonfree/fedora/rpmfusion-nonfree-release-$(rpm -E %fedora).noarch.rpm -y
 
-sudo dnf config-manager --enable fedora-cisco-openh264 -y
-sudo dnf install steam -y
+#sudo dnf config-manager --enable fedora-cisco-openh264 -y
+#sudo dnf install steam -y
 
-# HOmebrew on linux
+# Homebrew on linux
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
 
