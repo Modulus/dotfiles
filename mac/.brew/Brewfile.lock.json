@@ -2,10 +2,10 @@
   "entries": {
     "tap": {
       "hashicorp/tap": {
-        "revision": "6a4cab80b070d6742b1a1a7425139c15b41c84ba"
+        "revision": "f24b73c99285dbea8b5619e1550206867360e3d9"
       },
       "homebrew/bundle": {
-        "revision": "a882a221ecb33f855f8a0b78adaa525926901a19"
+        "revision": "57e5aed6159a698e6195d30403e6f7aaedf0c81b"
       },
       "minamijoyo/hcledit": {
         "revision": "ec3b4a8f386314eee071def36240211d1e2b969e"
@@ -1694,7 +1694,7 @@
         }
       },
       "postman": {
-        "version": "11.14.0",
+        "version": "11.15.0",
         "options": {
           "full_name": "postman"
         }
@@ -1771,6 +1771,14 @@
         "CLT": "15.3.0.0.1.1708646388",
         "Xcode": "15.4",
         "macOS": "14.6.1"
+      },
+      "sequoia": {
+        "HOMEBREW_VERSION": "4.3.24",
+        "HOMEBREW_PREFIX": "/opt/homebrew",
+        "Homebrew/homebrew-core": "api",
+        "CLT": "16.0.0.0.1.1724870825",
+        "Xcode": "16.0",
+        "macOS": "15.0"
       }
     }
   }

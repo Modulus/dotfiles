@@ -73,4 +73,3 @@ source  ~/.env
 
 # Debub slow zshrc
 #zprof
-
