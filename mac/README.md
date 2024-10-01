@@ -30,4 +30,7 @@ brew bundle --file ~/.brew/Brewfile
 NB! You only need to run these on a new/clean machine
 bash ~/.scripts/init.sh
 
+# Slow shell start
+https://blog.patshead.com/2011/04/improve-your-oh-my-zsh-startup-time-maybe.html
+
 
