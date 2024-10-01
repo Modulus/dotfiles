@@ -1,4 +1,3 @@
-
 autoload -Uz compinit
 compinit
 
