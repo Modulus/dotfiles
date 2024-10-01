@@ -33,4 +33,9 @@ bash ~/.scripts/init.sh
 # Slow shell start
 https://blog.patshead.com/2011/04/improve-your-oh-my-zsh-startup-time-maybe.html
 
+# Added lazy load of pyenv to this shell
+This helped immensly
+Trying to figure out a way to lazyload  autoload -Uz compinstall
 
+# To test shell loading
+exec zsh

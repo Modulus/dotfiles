@@ -2,6 +2,11 @@
 # Profile slow startup
 #zmodload zsh/zprof
 
+
+
+ autoload -Uz compinit
+ compinit
+
 #G Starship stuff
 eval "$(starship init zsh)"
 
