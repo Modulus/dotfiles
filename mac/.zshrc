@@ -69,7 +69,7 @@ source <(helm completion zsh)
 alias bump=helm-chart-version-bumper
 
 # Initalize secrets
-source  ~/.env
+test -f ~/.env && source  ~/.env || echo "~/.env file does not exists, add this!!!!!"
 
 # Debub slow zshrc
 #zprof
@@ -92,3 +92,6 @@ ulimit -n 1000000 unlimited
 
 # Docker completions
 #fpath=(~/.docker/completions \\$fpath)
+#
+test -f ~/.dnb-alias && source ~/.dnb-alias 
+##source ~/.dnb-alias
