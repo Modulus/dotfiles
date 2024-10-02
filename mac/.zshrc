@@ -73,3 +73,16 @@ source  ~/.env
 
 # Debub slow zshrc
 #zprof
+#
+
+# Node stash for multiple node version
+ export NVM_DIR="$HOME/.nvm"
+ [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+ [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+
+
+
+# Docker fix for error Error: ENFILE: file table overflow, scandir '/workspaces/sre-backstage/backstage/node_modules/@swagger-api/apidom-ns-openapi-2/es' using npm
+# Fix found here: http://blog.mact.me/2014/10/22/yosemite-upgrade-changes-open-file-limit
+# To se more details, se .scripts/files.sh
+ulimit -n 65536
