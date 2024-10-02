@@ -91,4 +91,4 @@ ulimit -n 1000000 unlimited
 
 
 # Docker completions
-fpath=(~/.docker/completions \\$fpath)
+#fpath=(~/.docker/completions \\$fpath)
