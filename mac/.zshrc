@@ -85,4 +85,10 @@ source  ~/.env
 # Docker fix for error Error: ENFILE: file table overflow, scandir '/workspaces/sre-backstage/backstage/node_modules/@swagger-api/apidom-ns-openapi-2/es' using npm
 # Fix found here: http://blog.mact.me/2014/10/22/yosemite-upgrade-changes-open-file-limit
 # To se more details, se .scripts/files.sh
-ulimit -n 65536
+#ulimit -n 65536 65536
+# Belive it or not but this is needed for node
+ulimit -n 1000000 unlimited
+
+
+# Docker completions
+fpath=(~/.docker/completions \\$fpath)
