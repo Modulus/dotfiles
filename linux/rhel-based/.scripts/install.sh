@@ -114,4 +114,5 @@ sudo dnf install xz xz-devel xz-libs
 sudo dnf install -y python3-filetype
 
 # Flatpak
-sudo dnf install flatpak
+sudo dnf install -y flatpak
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
