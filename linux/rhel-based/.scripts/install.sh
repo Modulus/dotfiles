@@ -112,3 +112,6 @@ sudo dnf install xz xz-devel xz-libs
 
 # VIm stash
 sudo dnf install -y python3-filetype
+
+# Flatpak
+sudo dnf install flatpak
