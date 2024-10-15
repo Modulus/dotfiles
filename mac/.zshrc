@@ -93,5 +93,6 @@ ulimit -n 1000000 unlimited
 # Docker completions
 #fpath=(~/.docker/completions \\$fpath)
 #
-test -f ~/.dnb-alias && source ~/.dnb-alias 
-##source ~/.dnb-alias
+test -f ~/.zshrc.db && source ~/.zshrc.dnb
+
+
