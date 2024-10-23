@@ -87,7 +87,7 @@ test -f ~/.env && source  ~/.env || echo "~/.env file does not exists, add this!
 # To se more details, se .scripts/files.sh
 #ulimit -n 65536 65536
 # Belive it or not but this is needed for node
-ulimit -n 1000000 unlimited
+#ulimit -n 1000000 unlimited
 
 
 # Docker completions
@@ -95,4 +95,4 @@ ulimit -n 1000000 unlimited
 #
 test -f ~/.zshrc.db && source ~/.zshrc.dnb
 
-
+export PATH="$PATH:$(yarn global bin)"
