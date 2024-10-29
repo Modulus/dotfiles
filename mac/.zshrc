@@ -1,6 +1,6 @@
 
 # Profile slow startup
-zmodload zsh/zprof
+#zmodload zsh/zprof
 
 
 
@@ -101,4 +101,4 @@ export NVM_DIR=~/.nvm
 test -f ~/.zshrc.db && source ~/.zshrc.dnb
 
 export PATH="$PATH:$(yarn global bin)"
-zprof
+#zprof
