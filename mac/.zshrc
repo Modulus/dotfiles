@@ -1,6 +1,6 @@
 
 # Profile slow startup
-#zmodload zsh/zprof
+zmodload zsh/zprof
 
 
 
@@ -76,11 +76,16 @@ test -f ~/.env && source  ~/.env || echo "~/.env file does not exists, add this!
 #
 
 # Node stash for multiple node version
- export NVM_DIR="$HOME/.nvm"
- [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
- [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+# export NVM_DIR="$HOME/.nvm"
+# [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+# [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
-
+# From https://www.ioannispoulakas.com/2020/02/22/how-to-speed-up-shell-load-while-using-nvm/
+ # Add default node to path
+export PATH=~/.nvm/versions/node/v18.20.4/bin:$PATH
+# Load NVM
+export NVM_DIR=~/.nvm
+[[ -s "$NVM_DIR/nvm.sh" ]] && source "$NVM_DIR/nvm.sh" --no-use
 
 # Docker fix for error Error: ENFILE: file table overflow, scandir '/workspaces/sre-backstage/backstage/node_modules/@swagger-api/apidom-ns-openapi-2/es' using npm
 # Fix found here: http://blog.mact.me/2014/10/22/yosemite-upgrade-changes-open-file-limit
@@ -96,3 +101,4 @@ test -f ~/.env && source  ~/.env || echo "~/.env file does not exists, add this!
 test -f ~/.zshrc.db && source ~/.zshrc.dnb
 
 export PATH="$PATH:$(yarn global bin)"
+zprof
