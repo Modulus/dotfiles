@@ -2,7 +2,9 @@
 # Profile slow startup
 #zmodload zsh/zprof
 
-
+# JAVA Stash
+export JAVA_HOME="/opt/homebrew/Cellar/openjdk/23.0.1"
+export PATH=$JAVA_HOME/bin:$PATH
 
  autoload -Uz compinit
  compinit
@@ -37,6 +39,8 @@ if type pyenv > /dev/null; then
     }
 fi
 
+alias p=python
+
 
 # LS color
 export CLICOLOR=1
@@ -46,7 +50,6 @@ if [ /opt/homebrew/bin/oc ]; then
   source <(oc completion zsh)
   compdef _oc oc
   alias k=oc
-
 fi
 
 
