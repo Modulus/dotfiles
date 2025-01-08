@@ -1,0 +1,9 @@
+[Unit]
+Description=start bluetooth after hibernation
+After=hibernate.target
+
+[Service]
+ExecStart=bluetoothctl power on
+
+[Install]
+WantedBy=hibernate.target
