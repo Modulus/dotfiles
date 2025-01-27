@@ -39,3 +39,11 @@ Trying to figure out a way to lazyload  autoload -Uz compinstall
 
 # To test shell loading
 exec zsh
+
+
+### Fish
+fish_add_path /opt/homebrew/bin
+
+fish_update_completions
+set -x LANG en_US.UTF-8
+fish_config
