@@ -116,3 +116,11 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+#
+#
+# Ollama stash
+alias o=ollama
+
+
+# Golang stash
+export GOPATH=$HOME/go
