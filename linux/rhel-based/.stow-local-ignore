@@ -3,3 +3,4 @@ Dockerfile
 docker-compose.yaml
 README.md
 .neovim-scripts
+.scripts
