@@ -13,3 +13,9 @@ export GOPATH=$HOME/go
 starship init fish | source
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
+
+alias k=oc
+
+
+# pyenv
+ pyenv init - fish | source
