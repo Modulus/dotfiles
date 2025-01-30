@@ -5,9 +5,6 @@ end
 alias o=ollama
 
 
-# Golang stash
-export GOPATH=$HOME/go
-
 
 
 starship init fish | source
@@ -18,4 +15,23 @@ alias k=oc
 
 
 # pyenv
- pyenv init - fish | source
+pyenv init - fish | source
+
+# Java
+fish_add_path -g $JAVA_HOME/bin
+fish_add_path -g /opt/homebrew/opt/openjdk/bin
+
+# Node
+fish_add_path -g ~/.nvm/versions/node/v18.20.4/bin
+
+
+# AI stash
+fish_add_path -g /Users/john.sigvald.skauge/.cache/lm-studio/bin
+
+# Golang
+export GOPATH=$HOME/go
+
+
+# Rust
+fish_add_path -g ~/.cargo/bin
+
