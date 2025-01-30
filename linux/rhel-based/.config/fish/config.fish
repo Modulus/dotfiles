@@ -14,14 +14,17 @@ starship init fish | source
 
 
 alias k=kubectl
-<<<<<<< HEAD
 
-=======
 #complete -o default -F __start_kubectl k
 #source ~/.env
 
 #. "$HOME/.cargo/env"
->>>>>>> fc23956 (Jadda)
 
 # pyenv
  pyenv init - fish | source
+
+
+# Rust
+fish_add_path -g ~/.cargo/bin
+
+alias bump=helm-chart-version-bumper
