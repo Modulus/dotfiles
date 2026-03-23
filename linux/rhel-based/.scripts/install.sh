@@ -119,3 +119,6 @@ flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.f
 
 # For python 3.13.0
 sudo dnf install -y python3-tkinter mingw64-python3-tkinter -y tk-devel
+
+# Gaming stash
+#sudo dnf install goverlay
