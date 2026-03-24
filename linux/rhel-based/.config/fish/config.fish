@@ -21,7 +21,7 @@ alias k=kubectl
 #. "$HOME/.cargo/env"
 
 # pyenv
- pyenv init - fish | source
+# pyenv init - fish | source
 
 
 # Rust

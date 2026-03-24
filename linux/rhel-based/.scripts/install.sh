@@ -43,6 +43,9 @@ echo "Installing pyenv"
 curl https://pyenv.run | bash
 
 
+# shell stuff
+sudo dnf install -y fish
+chsh -s "$(command -v fish)"
 # Put this in the shell profile
 sudo yum -y install git gcc zlib-devel bzip2-devel readline-devel sqlite-devel openssl-devel
 #sudo dnf install -y
