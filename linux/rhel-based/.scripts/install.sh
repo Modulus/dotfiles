@@ -132,3 +132,7 @@ sudo dnf install -y gamescope
 #gamescope-session-steam
 #gamescope-session-common
 #gamescope-htpc-common
+
+## Install spotify using rpm-fusion
+sudo dnf install lpf-spotify-client
+
