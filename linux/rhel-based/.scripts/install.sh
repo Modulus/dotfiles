@@ -25,7 +25,7 @@ sudo dnf intall -y stow
 #                  docker-engine
 sudo dnf -y install dnf-plugins-core
 sudo dnf config-manager addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo
-sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-model-plugin
 sudo systemctl enable --now docker
 #sudo usermod -aG docker $USER
 #sudo dnf -y kubernetes-client
