@@ -25,11 +25,11 @@ sudo dnf intall -y stow
 #                  docker-engine
 sudo dnf -y install dnf-plugins-core
 sudo dnf config-manager addrepo --from-repofile https://download.docker.com/linux/fedora/docker-ce.repo
-sudo dnf install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-model-plugin
+sudo dnf -y  install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin docker-model-plugin
 sudo systemctl enable --now docker
 #sudo usermod -aG docker $USER
 #sudo dnf -y kubernetes-client
-sudo dnf install rustup
+sudo dnf install -y rustup
 rustup-init
 
 sudo dnf install krita
@@ -132,5 +132,5 @@ sudo dnf install -y gamescope
 #gamescope-htpc-common
 
 ## Install spotify using rpm-fusion
-sudo dnf install lpf-spotify-client
+sudo dnf -y install lpf-spotify-client
 
