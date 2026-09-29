@@ -134,3 +134,6 @@ sudo dnf install -y gamescope
 ## Install spotify using rpm-fusion
 sudo dnf -y install lpf-spotify-client
 
+
+# Install equalizer
+sudo dnf install -y easyeffects
